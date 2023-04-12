@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como ter um Codigo Limpo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>Como ter um Código Limpo</h1>
+            <hr>
+        </header>
+        <!--Inicio da barra de navegação do site-->
+        <section class="navBarSection">
+            <ul>
+                <li class="nav-link"><a href="#O_Codigo"> O Código</a></li>
+                <hr>
+                <li class="nav-link"><a href="#Codigo_ruim">Códgo Ruim</a></li>
+                <hr>
+                <li class="nav-link"><a href="#O_custo_de_um_codigo_ruim">O Custo de um Código Ruim</a></li>
+                <hr>
+                <li class="nav-link"><a href="#O_que_e_um_codigo_limpo">O que é um Código Limpo</a></li>
+                <hr>
+                <li class="nav-link"><a href="#Use_nomes_que_Revelem_seus_propositos">Use nomes que Revelem seus
+                        propósitos</a></li>
+                <hr>
+                <li class="nav-link"><a href="#Evite_Informacoes_Erradas">Evite Informações Erradas</a></li>
+                <hr>
+                <li class="nav-link"><a href="#Referencia_Bibliografica">Referência Bibliográfica</a></li>
+                <hr>
+                <!--7 list-->
+            </ul>
+        </section>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="O_Codigo">
+            <header>
+                <h1>O Código</h1>
+            </header>
+
+            <p>O termo código abrange diferentes acepções e significados. Trata-se, por exemplo, de uma combinação de
+                signos que, dentro de um sistema estabelecido, tem um determinado valor</p>
+            <p>
+                As pesssoas acham que um dia os códigos irão deixar de existir, bobagem nunca nos livraremos dos
+                códigos,pois eles representam os detalhes dos requisitos. Em certo nível, não há como ignorar ou
+                abstrair esses detalhes; eles precisam ser específicados. E especificar requisitos detalhadamente de
+                modo que uma máquina possa executá-los é programar e tal especificação é o código.
+            </p>
+            <p>
+                As pessoas que pensam que o código um dia desaparecerá são como matemáticos que esperam algum dia
+                descobrir uma matemática que não precise ser formal. Elas esperam que um dia descobramos uma forma de
+                criar máquinas que possam fazer o que desejamos em vez do que mandamos. Tais máquinas terão de ser
+                capazes de nos entender tão bem de modo que possam traduzir exigências vagamente especificadas em
+                programas executáveis perfeitos para satisfazer nossas necessidades.
+            </p>
+        </section>
+        <!--início da 2 section-->
+        <section class="main-section" id="Codigo_ruim">
+            <hr>
+            <header>
+                <h1>Código Ruim</h1>
+            </header>
+
+            <p>
+                Existe uma coisa que chamamos de code smell, ou seja, qualquer coisa que aponta que um códigoo é
+                problemático, e eu gosto de citar algumas coisas quando o assunto é código ruim:
+            </p>
+            <ul>
+                <li>Código curto demais (excesso de if ternário, nomes abreviados)</li>
+                <li>Código pouco verboso (nomes pouco descritivos)</li>
+                <li>Código verboso demais (excesso de linhas, nomes grandes demais)</li>
+                <li>Falta de comentários</li>
+                <li>Código muito acoplado</li>
+                <li>Código com muitas responsabilidades</li>
+                <li>Bônus: Cultura do LGTM</li>
+            </ul>
+            <p>
+                Alguma vez um código ruim já lhe atrasou consideravelmente? Se você for programador, independente da
+                sua experiência, então já se deparou várias vezes com esse obstáculo.Aliás, é como se caminhassemos
+                penosamentepor um lamaçal de arbustos emaranhados com armadilhas isso é o que fazemos em um código ruim.
+                Pelejamos para encontrar nosso caminho, esperando avistar alguma dica, alguma indicação do que está
+                acontecendo; mas tudoo que vemos é um código cada vez mais sem sentido.
+            </p>
+        </section>
+        <!--inicio da 3 section-->
+        <section class="main-section" id="O_custo_de_um_codigo_ruim">
+            <hr>
+            <header>
+                <h1>O Custo de um Código Ruim</h1>
+            </header>
+            <p>
+                Códigos mal escritos são, na maior parte do tempo, frutos de cronogramas apertados, envelhecimento
+                natural, falta de maturidade dos envolvidos ou desejo de mostrar produtividade. Porem, fazer "mais
+                rápido" tem seus custos: a qualidade e legibilidade para quem posteriormente precisa manter esse código.
+            </p>
+            <p>
+                Um código confuso é aquele em que uma simples alteração pode ocasionar diversos erros seguido um atrás
+                do outro;em que cada adição ou modificação ao sistema exige que restaurações, amarrações e remendos
+                sejam
+                "entendidas" de modo que outras possam ser incluídas. Com o tempo, a bagunça se torna tão grande e
+                profunda que não dá para arrumá-la.
+            </p>
+            <p>
+                Conforme a confusão aumenta, a produtividade diminui, assintoticamente aproximando-se do zero.
+            </p>
+            <!--graphic_image-->
+            <img src="https://silvrback.s3.amazonaws.com/uploads/ca6c5343-3df3-47e0-9e45-1f641167b77c/productivity-vs-time.png"
+                alt="grafico_productivityxtime">
+        </section>
+        <!--inicio da 4 section-->
+        <section class="main-section" id="O_que_e_um_codigo_limpo">
+            <hr>
+            <header>
+                <h1>O que é um Código Limpo ?</h1>
+            </header>
+            <h3>Segundo Bjarne</h3>
+            <p>
+                "Gosto do meu código elegante e eficiente. A lógica deve ser direta para dificultar o encobrimento de
+                bugs, as dependências mínimas para facilitar a manutenção, o tratamento de erro completo de acordo co
+                uma estratégia clara e o desempenho próximo do mas eficiente de modo a não incitar as pessoas a tornarem
+                o código confuso com otimizações sorrateiras."
+            </p>
+
+            <p>
+                Observe a ênfase que Bjarne da à palavra "naturalidade". Aparentemente, Bjarne acha que um código limpo
+                proporciona uma leitura natural; e lê-lo deve ser belo como ouvir uma música num rádio ou visualizar um
+                carro de design magnífico.
+                <br>
+                Além de citar a palavra "eficiência" que por si só já possui um significado bem atrelado a um código
+                funcional e limpo.
+            </p>
+        </section>
+        <!--inicio da 5 section-->
+        <section class="main-section" id="Use_nomes_que_Revelem_seus_propositos">
+            <hr>
+            <header>
+                <h1>Use nomes que Revelem seus propósitos</h1>
+            </header>
+            <p>
+                Em toda a web, é verdade que as pessoas fazem coisas bem estranhas utilizando o HTML. Alguns abusos do
+                HTML são resultado de práticas antigas que ainda não foram completamente esquecidas, e outros são só
+                simples ignorância das boas práticas. Em qualquer um desses casos, é necessário a substituição de
+                códigos ruins por códigos bons, em qualquer local que forem encontrados, se possível.
+            </p>
+            <p>
+                O nome de uma variável, função ou classe deve responder a todas as grnades questões. Ele deve lhe dizer
+                porque existe, o que faz e como é usado. Se um nome requer um comentário, então ele não revela seu
+                propósito
+            </p>
+            <h4>Exemplo:</h4>
+            <p class="codeStyleFont">
+                int d; // tempo decorrido em dias
+            </p>
+            <p>
+                O nome <span class="codeStyleFont">d</span> não revela nada. Ele não indica a ideia de tempo decorrido,
+                nem de dias. Devemos escolher um nome especifique seu uso para mensuração e a unidade usada.
+            </p>
+            <p class="codeStyleFont">
+                int elapsedTimeInDays;<br>
+                int daysSinceCreation;<br>
+                int daysSinceModification;<br>
+                int fleaAgeInDays;
+            </p>
+        </section>
+        <!--inicio da 6 section-->
+        <section class="main-section" id="Evite_Informacoes_Erradas">
+            <hr>
+            <header>
+                <h1>Evite Informações Erradas</h1>
+            </header>
+            <p>
+                Os progrmadores deve evitar informações e dicas falsas que confundam o sentido do código. Devemos evitar
+                palavras cujos significados podem se desviar daquele que desejamos. Por exemplo, <span
+                    class="codeStyleFont">hp,aix</span> e <span class="codeStyleFont">sco</span> seriam nomes ruins de
+                variáveis, pois são nomes de plataformas Unix ou variantes.Mesmo se estiver programando um hipotenusa e
+                <span class="codeStyleFont">hp</span> parecer uma abreviação, o nome pode ser mal interpretado.
+            </p>
+            <p>
+                Não se refira a um grupo de contas como <span class="codeStyleFont">accountList</span>, a menos que
+                realmente seja uma <span class="codeStyleFont">List</span>. A palavra list (lista) significa algo
+                específico para os programadores. Se o que armazena as contas não for uma <span
+                    class="codeStyleFont">list</span> de verdade, poderá confundir os outros. Portanto, <span
+                    class="codeStyleFont">accountGroup</span> ou <span class="codeStyleFont">bunchOfAccounts</span> ou
+                apenas <span class="codeStyleFont">accounts</span> seria melhor.
+            </p>
+        </section>
+        <!--inicio da ultima section-->
+        <section class="main-section" id="Referencia_Bibliografica">
+            <hr>
+            <header>
+                <h1>Referência Bibliográfica</h1>
+            </header>
+            <ul>
+                <li>Código Limpo (Série de Robert C. Martin)</li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility/HTML">MDN</a></li>
+                <li><a
+                        href="https://www.linkedin.com/pulse/o-custo-do-código-ruim-rodrigo-de-oliveira/?originalSubdomain=pt">Rodrigo
+                        de Oiveira's publication</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
