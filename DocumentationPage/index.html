@@ -19,35 +19,35 @@
 <body>
     <nav id="navbar">
         <header>
-            <h1>Como ter um Código Limpo</h1>
+            Como ter um Código Limpo
             <hr>
         </header>
         <!--Inicio da barra de navegação do site-->
-        <section class="navBarSection">
+        <section>
             <ul>
-                <li class="nav-link"><a href="#O_Codigo"> O Código</a></li>
+                <li><a class="nav-link" href="#O_Código">O Código</a></li>
                 <hr>
-                <li class="nav-link"><a href="#Codigo_ruim">Códgo Ruim</a></li>
+                <li><a class="nav-link" href="#Código_Ruim">Código Ruim</a></li>
                 <hr>
-                <li class="nav-link"><a href="#O_custo_de_um_codigo_ruim">O Custo de um Código Ruim</a></li>
+                <li><a class="nav-link" href="#O_Custo_de_um_Código_Ruim">O Custo de um Código Ruim</a></li>
                 <hr>
-                <li class="nav-link"><a href="#O_que_e_um_codigo_limpo">O que é um Código Limpo</a></li>
+                <li><a class="nav-link" href="#O_que_é_um_Código_Limpo_?">O que é um Código Limpo ?</a></li>
                 <hr>
-                <li class="nav-link"><a href="#Use_nomes_que_Revelem_seus_propositos">Use nomes que Revelem seus
+                <li><a class="nav-link" href="#Use_nomes_que_Revelem_seus_propósitos">Use nomes que Revelem seus
                         propósitos</a></li>
                 <hr>
-                <li class="nav-link"><a href="#Evite_Informacoes_Erradas">Evite Informações Erradas</a></li>
+                <li><a class="nav-link" href="#Evite_Informações_Erradas">Evite Informações Erradas</a></li>
                 <hr>
-                <li class="nav-link"><a href="#Referencia_Bibliografica">Referência Bibliográfica</a></li>
+                <li><a class="nav-link" href="#Referência_Bibliográfica">Referência Bibliográfica</a></li>
                 <hr>
                 <!--7 list-->
             </ul>
         </section>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="O_Codigo">
+        <section class="main-section" id="O_Código">
             <header>
-                <h1>O Código</h1>
+                O Código
             </header>
 
             <p>O termo código abrange diferentes acepções e significados. Trata-se, por exemplo, de uma combinação de
@@ -67,10 +67,9 @@
             </p>
         </section>
         <!--início da 2 section-->
-        <section class="main-section" id="Codigo_ruim">
-            <hr>
+        <section class="main-section" id="Código_Ruim">
             <header>
-                <h1>Código Ruim</h1>
+                Código Ruim
             </header>
 
             <p>
@@ -95,10 +94,9 @@
             </p>
         </section>
         <!--inicio da 3 section-->
-        <section class="main-section" id="O_custo_de_um_codigo_ruim">
-            <hr>
+        <section class="main-section" id="O_Custo_de_um_Código_Ruim">
             <header>
-                <h1>O Custo de um Código Ruim</h1>
+                O Custo de um Código Ruim
             </header>
             <p>
                 Códigos mal escritos são, na maior parte do tempo, frutos de cronogramas apertados, envelhecimento
@@ -120,10 +118,9 @@
                 alt="grafico_productivityxtime">
         </section>
         <!--inicio da 4 section-->
-        <section class="main-section" id="O_que_e_um_codigo_limpo">
-            <hr>
+        <section class="main-section" id="O_que_é_um_Código_Limpo_?">
             <header>
-                <h1>O que é um Código Limpo ?</h1>
+                O que é um Código Limpo ?
             </header>
             <h3>Segundo Bjarne</h3>
             <p>
@@ -143,10 +140,9 @@
             </p>
         </section>
         <!--inicio da 5 section-->
-        <section class="main-section" id="Use_nomes_que_Revelem_seus_propositos">
-            <hr>
+        <section class="main-section" id="Use_nomes_que_Revelem_seus_propósitos">
             <header>
-                <h1>Use nomes que Revelem seus propósitos</h1>
+                Use nomes que Revelem seus propósitos
             </header>
             <p>
                 Em toda a web, é verdade que as pessoas fazem coisas bem estranhas utilizando o HTML. Alguns abusos do
@@ -160,25 +156,26 @@
                 propósito
             </p>
             <h4>Exemplo:</h4>
-            <p class="codeStyleFont">
-                int d; // tempo decorrido em dias
+            <p>
+                <code> int d; // tempo decorrido em dias</code>
             </p>
             <p>
                 O nome <span class="codeStyleFont">d</span> não revela nada. Ele não indica a ideia de tempo decorrido,
                 nem de dias. Devemos escolher um nome especifique seu uso para mensuração e a unidade usada.
             </p>
-            <p class="codeStyleFont">
+            <p>
+                <code>
                 int elapsedTimeInDays;<br>
                 int daysSinceCreation;<br>
                 int daysSinceModification;<br>
                 int fleaAgeInDays;
+            </code>
             </p>
         </section>
         <!--inicio da 6 section-->
-        <section class="main-section" id="Evite_Informacoes_Erradas">
-            <hr>
+        <section class="main-section" id="Evite_Informações_Erradas">
             <header>
-                <h1>Evite Informações Erradas</h1>
+                Evite Informações Erradas
             </header>
             <p>
                 Os progrmadores deve evitar informações e dicas falsas que confundam o sentido do código. Devemos evitar
@@ -188,19 +185,18 @@
                 <span class="codeStyleFont">hp</span> parecer uma abreviação, o nome pode ser mal interpretado.
             </p>
             <p>
-                Não se refira a um grupo de contas como <span class="codeStyleFont">accountList</span>, a menos que
-                realmente seja uma <span class="codeStyleFont">List</span>. A palavra list (lista) significa algo
-                específico para os programadores. Se o que armazena as contas não for uma <span
-                    class="codeStyleFont">list</span> de verdade, poderá confundir os outros. Portanto, <span
-                    class="codeStyleFont">accountGroup</span> ou <span class="codeStyleFont">bunchOfAccounts</span> ou
-                apenas <span class="codeStyleFont">accounts</span> seria melhor.
+                Não se refira a um grupo de contas como <code>accountList</code>, a menos que
+                realmente seja uma <code>List</code>. A palavra list (lista) significa algo
+                específico para os programadores. Se o que armazena as contas não for uma
+                <code>list</code> de verdade, poderá confundir os outros. Portanto, <code>accountGroup</code> ou
+                <code>bunchOfAccounts</code> ou
+                apenas <code>accounts</code> seria melhor.
             </p>
         </section>
         <!--inicio da ultima section-->
-        <section class="main-section" id="Referencia_Bibliografica">
-            <hr>
+        <section class="main-section" id="Referência_Bibliográfica">
             <header>
-                <h1>Referência Bibliográfica</h1>
+                Referência Bibliográfica
             </header>
             <ul>
                 <li>Código Limpo (Série de Robert C. Martin)</li>

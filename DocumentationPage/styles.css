@@ -1,8 +1,17 @@
+@media (min-width: 600px) {
+    .main-section {
+        font-size: 20px;
+    }
+
+    #navbar {
+        width: 100px;
+    }
+}
+
 #navbar {
     display: block;
     background-color: #393646;
     width: 300px;
-    min-width: 280px;
     height: 100%;
     position: fixed;
     top: 0;
@@ -13,11 +22,19 @@ body {
     background-color: #FFF3E2;
 }
 
+header {
+    font-size: 1.8em;
+}
+
 #main-doc {
     display: flex;
     flex-direction: column;
     margin-left: 300px;
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .nav-link {
@@ -26,16 +43,15 @@ body {
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.nav-link>a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Poppins', sans-serif;
     color: #F4EEE0;
 }
 
-#navbar>header {
+#navbar li {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar header {
     font-family: 'Poppins', sans-serif;
     color: #F4EEE0;
     margin-left: 10px;
@@ -60,9 +76,4 @@ a:hover {
     font-weight: bolder;
     font-family: 'M PLUS Code Latin', sans-serif;
 
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
